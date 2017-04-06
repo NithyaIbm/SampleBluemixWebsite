@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: SampleBluemixWebsite
+  host: SampleBluemixWebsite
+  disk_quota: 1024M
+  services:
+  - SampleBluemixWebsite-cloudantNoSQLDB
+  - API Connect-di
+  - IBM Alert Notification-c4
+  - availability-monitoring-auto
